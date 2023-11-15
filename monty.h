@@ -53,5 +53,8 @@ void nodes_add(stack_t **stack, unsigned int line_number);
 void nodes_sub(stack_t **stack, unsigned int line_number);
 void nodes_diiv(stack_t **stack, unsigned int line_number);
 void more_errors(int error_code, ...);
+void errors(int error_code, ...);
+void string_errors(int error_code, ...);
+void free_nodes(void);
 
 #endif
