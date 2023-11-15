@@ -56,5 +56,8 @@ void more_errors(int error_code, ...);
 void errors(int error_code, ...);
 void string_errors(int error_code, ...);
 void free_nodes(void);
+void multiply_nodes(stack_t **stack, unsigned int line_number);
+void nodes_mod(stack_t **stack, unsigned int line_number);
+
 
 #endif
