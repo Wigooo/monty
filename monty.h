@@ -42,6 +42,11 @@ typedef struct instruction_s
 extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
 
+void add_to_stack(stack_t **new,
+		__attribute__((unused)) unsigned int linenumber);
+void printstack(stack_t **stack, unsigned int linenumber);
+void poptop(stack_t **stack, unsigned int linenumber);
+void printtop(stack_t **stack, unsigned int linenumber);
 
 
 #endif
