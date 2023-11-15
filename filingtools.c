@@ -32,7 +32,7 @@ void readfile(FILE *fd)
 
 	for (linenumber = 1; getline(&buff, &length, fd) != -1; linenumber++)
 	{
-		f = parse_line(buff, linenumber, f);
+		f = parseline(buff, linenumber, f);
 	}
 	free(buff);
 }

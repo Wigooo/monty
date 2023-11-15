@@ -55,7 +55,7 @@ void poptop(stack_t **stack, unsigned int linenumber)
 	stack_t *tempo;
 
 	if (stack == NULL || *stack == NULL)
-		more_error(7, linenumber);
+		more_errors(7, linenumber);
 	tempo = *stack;
 	*stack = tempo->next;
 	if (*stack != NULL)
@@ -70,6 +70,6 @@ void poptop(stack_t **stack, unsigned int linenumber)
 void printtop(stack_t **stack, unsigned int linenumber)
 {
 	if (stack == NULL || *stack == NULL)
-		more_error(6, linenumber);
+		more_errors(6, linenumber);
 	printf("%d\n", (*stack)->n);
 }

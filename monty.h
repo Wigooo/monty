@@ -67,6 +67,9 @@ void readfile(FILE *fd);
 int parseline(char *buff, int linenumber, int f);
 void findfunc(char *opcode, char *value, int lnumber, int f);
 void callfun(op_func func, char *op, char *val, int ln, int format);
+stack_t *createnode(int n);
+void free_nodes(void);
+void add_to_queue(stack_t **new, __attribute__((unused)) unsigned int lnumber);
 
 
 #endif

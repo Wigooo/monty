@@ -104,7 +104,7 @@ void string_errors(int error_code, ...)
 			fprintf(stderr, "L%d: can't pchar, value out of range\n", x);
 			break;
 		case 11:
-			fprintf(stderr, "L%d: can't pchar, stack empty\n", l_num);
+			fprintf(stderr, "L%d: can't pchar, stack empty\n", x);
 			break;
 		default:
 			break;
