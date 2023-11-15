@@ -47,6 +47,11 @@ void add_to_stack(stack_t **new,
 void printstack(stack_t **stack, unsigned int linenumber);
 void poptop(stack_t **stack, unsigned int linenumber);
 void printtop(stack_t **stack, unsigned int linenumber);
-
+void nop_a(stack_t **stack, unsigned int line_number);
+void nodes_swap(stack_t **stack, unsigned int line_number);
+void nodes_add(stack_t **stack, unsigned int line_number);
+void nodes_sub(stack_t **stack, unsigned int line_number);
+void nodes_diiv(stack_t **stack, unsigned int line_number);
+void more_errors(int error_code, ...);
 
 #endif
