@@ -51,7 +51,7 @@ void nop_a(stack_t **stack, unsigned int line_number);
 void nodes_swap(stack_t **stack, unsigned int line_number);
 void nodes_add(stack_t **stack, unsigned int line_number);
 void nodes_sub(stack_t **stack, unsigned int line_number);
-void nodes_diiv(stack_t **stack, unsigned int line_number);
+void nodes_div(stack_t **stack, unsigned int line_number);
 void more_errors(int error_code, ...);
 void errors(int error_code, ...);
 void string_errors(int error_code, ...);
@@ -62,5 +62,11 @@ void print_character(stack_t **stack, unsigned int line_number);
 void print_string(stack_t **stack, __attribute__((unused))unsigned int ln);
 void rotatel(stack_t **stack, __attribute__((unused))unsigned int ln);
 void rotater(stack_t **stack, __attribute__((unused))unsigned int ln);
+void openfile(char *filename);
+void readfile(FILE *fd);
+int parseline(char *buff, int linenumber, int f);
+void findfunc(char *opcode, char *value, int lnumber, int f);
+void callfun(op_func func, char *op, char *val, int ln, int format);
+
 
 #endif
